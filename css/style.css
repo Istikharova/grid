@@ -1,0 +1,286 @@
+/* === Small CSS Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: 600;
+    font-size: 5em;
+}
+
+
+/* grid template */
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "section section section section"
+        "section2 section2 section2 section2"
+        "section3 section3 section3 section3"
+        "section4 section4 section4 section4"
+        "footer footer footer footer";
+}
+
+/* header mit nav */
+header {
+    height: 70vh;
+    grid-area: header;
+    background: url('../image/bg-masthead.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li a {
+    padding: 1.5rem;
+    color: white;
+}
+
+header .header p {
+    padding-bottom: 2rem;
+}
+
+
+/* erstes section */
+.section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section p {
+    padding-bottom: 2rem;
+}
+
+.section h2 {
+    font-size: 2.5em
+}
+
+/* section services */
+.services {
+    background: #1D809F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .servicestitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .servicestitle p {
+    padding: 3rem 0 0 0;
+    color: #ecb807;
+    text-transform: uppercase;
+}
+
+.services h2 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5rem;
+    height: 50vh;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.services .box .icon {
+    background: white;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #1D809F;
+}
+
+.services .box h6 {
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+
+/* section verteilen auf grid-area */
+.section {
+    grid-area: section;
+}
+
+.services {
+    grid-area: section2;
+}
+
+.download {
+    grid-area: section3;
+}
+
+.galery {
+    grid-area: section4;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* button */
+
+button {
+    width: 8rem;
+    background: #1D809F;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.3em;
+}
+
+/* section download now */
+.download {
+    background-image: url('../image/bg-callout.jpg');
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download h2 {
+    padding: 3rem;
+    font-size: 3em;
+    text-align: center;
+}
+
+/* galery */
+.galery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galery .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 90vh;
+    width: 80vw;
+}
+
+.galery .container .box:nth-child(1) {
+    background-image: url(../image/portfolio-1.jpg);
+}
+
+.galery .container .box:nth-child(2) {
+    background-image: url(../image/portfolio-2.jpg);
+}
+
+.galery .container .box:nth-child(3) {
+    background-image: url(../image/portfolio-3.jpg);
+}
+
+.galery .container .box:nth-child(4) {
+    background-image: url(../image/portfolio-4.jpg);
+}
+
+.galery .container .box {
+    transition: all 500ms;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.galery .container .box h6 {
+    text-align: start;
+    font-size: 2em;
+}
+
+.galery .container .box:hover {
+    background: #1d819f5c;
+    transform: scale(0.9);
+}
+
+.galery h2 {
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+    padding-bottom: 2rem;
+}
+
+.galery p {
+    padding: 3rem 0 0 0;
+    color: #ecb807;
+    text-transform: uppercase;
+}
+
+footer ul {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .socialmedia li {
+    background: #1D809F;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    font-size: 1em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+footer p {
+    text-align: center;
+}
