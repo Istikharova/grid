@@ -4,12 +4,8 @@ const nav = document.querySelector('.nav-list');
 
 function navSlide() {
 
-
-
-
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
-
     })
 
     kreuz.addEventListener('click', () => {
