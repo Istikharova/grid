@@ -1,0 +1,53 @@
+.galery .container .box:nth-child(1) {
+    background-image: url(../image/portfolio-1.jpg);
+}
+
+.galery .container .box:nth-child(2) {
+    background-image: url(../image/portfolio-2.jpg);
+}
+
+.galery .container .box:nth-child(3) {
+    background-image: url(../image/portfolio-3.jpg);
+}
+
+.galery .container .box:nth-child(4) {
+    background-image: url(../image/portfolio-4.jpg);
+}
+
+.galery .container .box {
+    transition: all 500ms;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.galery .container .box h6 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 2em;
+}
+
+/* overlay vorbereiten */
+.imageOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1d819fdd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+/* overlay hovereffect */
+
+.imageOverlay:hover {
+    opacity: 1;
+}
+
+.galery .container .box:hover {
+    transform: scale(0.9);
+}

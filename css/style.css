@@ -201,7 +201,7 @@ button {
     text-align: center;
 }
 
-/* galery */
+/* galery positionieren*/
 .galery {
     display: flex;
     flex-direction: column;
@@ -216,39 +216,6 @@ button {
     width: 80vw;
 }
 
-.galery .container .box:nth-child(1) {
-    background-image: url(../image/portfolio-1.jpg);
-}
-
-.galery .container .box:nth-child(2) {
-    background-image: url(../image/portfolio-2.jpg);
-}
-
-.galery .container .box:nth-child(3) {
-    background-image: url(../image/portfolio-3.jpg);
-}
-
-.galery .container .box:nth-child(4) {
-    background-image: url(../image/portfolio-4.jpg);
-}
-
-.galery .container .box {
-    transition: all 500ms;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-.galery .container .box h6 {
-    text-align: start;
-    font-size: 2em;
-}
-
-.galery .container .box:hover {
-    background: #1d819f5c;
-    transform: scale(0.9);
-}
-
 .galery h2 {
     color: rgb(0, 0, 0);
     font-size: 2.5em;
@@ -261,6 +228,7 @@ button {
     text-transform: uppercase;
 }
 
+/* footer */
 footer ul {
     height: 30vh;
     display: flex;
